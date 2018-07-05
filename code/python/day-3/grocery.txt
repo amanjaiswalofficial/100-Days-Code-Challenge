@@ -1,3 +1,0 @@
-A => 1KG
-AA 2 => 2KG
-AAA 3 => 3KG

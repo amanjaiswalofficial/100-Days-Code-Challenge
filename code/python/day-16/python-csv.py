@@ -1,8 +1,13 @@
-import csv
 
-with open('student.csv','r') as csv_file:
-    csv_reader=csv.reader(csv_file)
+def choice():
+    print('Enter your choice:')
+    print('1.Enter Data')
+    print('2.Edit Data')
+    print('3.Display Data')
+    print('4.Make Data Active/Inactive')
+    ch=int(input('Enter your choice:'))
+    return ch
 
-    for line in csv_reader:
-        #print(line) to print each row with all it's entries
-        #print(line[2]) to print only the 3rd entry in each row's data
+c=choice()
+if(c==1):
+    

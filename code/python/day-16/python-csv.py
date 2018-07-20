@@ -1,4 +1,5 @@
 import csv
+import os
 def choice():
     print('Enter your choice:')
     print('1.Enter Data')
@@ -38,23 +39,44 @@ if(c==1):
 
 elif(c==2):
     no=int(input('Enter registration number to edit the data for a record:'))
-    with open('new-name.csv', 'a+') as newfile:
+    fieldname = ['Name', 'Registration No.', 'Physics',
+                 'Chemistry', 'Maths', 'Percentage', 'Course-Opted', 'Flag']
+    copy = []
+    flag = False
+    row = []
+    with open('new-name.csv', 'r+') as newfile:
         csvreader = csv.DictReader(newfile, delimiter='\t')
-        csvwriter = csv.DictWriter(newfile, delimiter='\t')
-    flag=False
-    while row in csvreader:
-        if(row['Registration No.']==no):
-            #do some shit
-            flag=True
-    if(flag==False):
-        print('Incorrect Registration No.')
-    elif(flag==True):
-        fieldname = ['Name', 'Registration No.', 'Physics',
-                     'Chemistry', 'Maths', 'Percentage', 'Course-Opted', 'Flag']
-        for rows in csvreader:
-            for i in rows:
-                while(rows['Registration No.']==no)
-        
+        csvwriter = csv.DictWriter(newfile,fieldnames=fieldname, delimiter='\t')    
+        for row in csvreader:
+            if(int(row['Registration No.']) == no):
+                flag = True
+                continue
+            else:
+                copy.append(row)
+        if(flag == False):
+            print('Incorrect Registration No.')
+        elif(flag == True):
+            print('New Record Details:')
+            row['Name'] = str(input('New name:'))
+            row['Registration No.'] = str(input('New registration no.:'))
+            row['Physics'] = str(input('Physics:'))
+            row['Chemistry'] = str(input('Chemistry:'))
+            row['Maths'] = str(input('Maths:'))
+            row['Percentage'] = str(input('Percentage:'))
+            row['Course-Opted'] = str(input('Course Opted:'))
+            row['Flag'] = str(input('Flag:'))
+            temp = []
+            temp = row.copy()
+            print(copy)
+            print(temp)
+            
+    os.remove('new-name.csv')
+    with open('new-name.csv', 'w') as newfile:
+        csvwriter = csv.DictWriter(newfile,fieldnames=fieldname, delimiter='\t')
+        csvwriter.writeheader()
+        for x in copy:
+            csvwriter.writerow(x)
+            
 
 elif(c==3):
     fieldname = ['Name', 'Registration No.', 'Physics',

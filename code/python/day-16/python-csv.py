@@ -13,7 +13,7 @@ c=choice()
 
 # this is optional, this only writes the first row as the fieldnames value
 if(c==1):
-    with open('new-name.csv','w') as newfile:
+    with open('new-name.csv','a+') as newfile:
         fieldname = ['Name', 'Registration No.', 'Physics',
                      'Chemistry', 'Maths', 'Percentage', 'Course-Opted', 'Flag']
         csvwriters = csv.DictWriter(newfile, fieldnames=fieldname, delimiter='\t')

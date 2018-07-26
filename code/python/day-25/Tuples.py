@@ -1,0 +1,5 @@
+n=int(input())
+x=str(input())
+t=tuple(int(a) for a in x.split(' '))
+h=hash(t)
+print(h)

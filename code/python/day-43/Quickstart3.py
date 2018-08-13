@@ -1,9 +1,10 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
+
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
-
+#setting up credentials
 credentials = ServiceAccountCredentials.from_json_keyfile_name(
     'ReadyDraftOne.json', scope)
 

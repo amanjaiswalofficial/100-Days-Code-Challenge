@@ -1,5 +1,7 @@
 inputcommand = int(input())  # no of commands
 lst=[]
+
+#main code
 for i in range(inputcommand):
     # taking instruction where first input is no of elements in the set
     st1 = int(input())

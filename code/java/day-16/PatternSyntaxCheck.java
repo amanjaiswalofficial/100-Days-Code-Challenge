@@ -17,6 +17,6 @@ public class PatternSyntaxCheck {
             }
             testCases--;
         }
-        System.out.println(st);
+        System.out.println(st);//Printing the final string
     }
 }

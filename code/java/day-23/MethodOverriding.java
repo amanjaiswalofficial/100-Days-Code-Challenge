@@ -3,7 +3,7 @@ class BiCycle{
 		return "a vehicle with pedals.";
 	}
 }
-
+//another class extending the first class
 class MotorCycle extends BiCycle{
 	String define_me(){
 		return "a cycle with an engine.";

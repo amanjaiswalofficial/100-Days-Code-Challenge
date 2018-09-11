@@ -9,7 +9,7 @@ abstract class Book {
     }
 }
 
-
+//class extending another class
 class MyBook extends Book {
     void setTitle(String s) {
         this.title = s;

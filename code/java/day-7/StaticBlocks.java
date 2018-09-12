@@ -4,6 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+//Understanding about static blocks
 public class StaticBlocks {
 
     

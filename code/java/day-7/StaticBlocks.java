@@ -23,7 +23,7 @@ static
     {
         System.out.println("java.lang.Exception: Breadth and height must be positive");
     }
-}
+}//this block doesnt need to be initialized it is called automatically
 
 public static void main(String[] args){
 		if(flag){

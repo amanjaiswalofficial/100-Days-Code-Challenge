@@ -8,7 +8,7 @@ public class StringsIntro
         s1=sc.nextLine();
         s2=sc.nextLine();
         System.out.println(s1.length()+s2.length());
-        if(s1.compareTo(s2)>0)
+        if(s1.compareTo(s2)>0)//comparision
             {
                 System.out.println("Yes");
             }

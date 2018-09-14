@@ -5,7 +5,7 @@ public class StringsIntro
     {
         Scanner sc=new Scanner(System.in);
         String s1="",s2="";
-        s1=sc.nextLine();
+        s1=sc.nextLine();//
         s2=sc.nextLine();
         System.out.println(s1.length()+s2.length());
         if(s1.compareTo(s2)>0)//comparisions

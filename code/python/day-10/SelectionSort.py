@@ -8,4 +8,3 @@ for i in range(n):
         j=i
     a[a.index(min)],a[j]=a[j],a[a.index(min)]  
 print(a)
-##

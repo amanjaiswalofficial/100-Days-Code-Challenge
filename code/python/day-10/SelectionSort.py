@@ -7,4 +7,4 @@ for i in range(n):
     if(a[i]<min):
         j=i
     a[a.index(min)],a[j]=a[j],a[a.index(min)]  
-print(a)
+print(a)##

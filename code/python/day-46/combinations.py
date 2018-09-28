@@ -19,5 +19,5 @@ for j in range(1,int(length)+1):
         if(len(i)==j):
             tmp.append(i)
     tmp.sort()
-    for x in tmp:#
+    for x in tmp:
         print(x)

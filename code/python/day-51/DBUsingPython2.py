@@ -1,6 +1,6 @@
 import pandas as pd
 import ibm_db
-import ibm_db_dbi#
+import ibm_db_dbi
 
 dsn_driver = "{IBM DB2 ODBC DRIVER}"
 dsn_database = "BLUDB"

@@ -4,7 +4,7 @@ from sklearn.tree import DecisionTreeRegressor
 iowa_file_path = './train.csv'
 
 #to read the file
-home_data = pd.read_csv(iowa_file_path)#
+home_data = pd.read_csv(iowa_file_path)
 
 #to print the columns from the file
 #print(home_data.columns) 
